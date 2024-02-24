@@ -1,0 +1,67 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+}
+
+.game-form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* ボタンが画面幅に収まらない場合は折り返す */
+  gap: 10px;
+  /* ボタン間の隙間 */
+  margin: 100px auto;
+  /* 位置を画面の中央に調整 */
+}
+
+.game-choice {
+  background-color: green;
+  /* ボタンの色を緑に */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.game-choice:hover {
+  background-color: #45a049;
+}
+
+.battle-button {
+  position: fixed; /* 画面に固定 */
+  margin-top: 70px;
+  left: 50%; /* 左から50%の位置に配置 */
+  transform: translateX(-50%); /* X軸方向に-50%移動して中央揃え */
+  background-color: red; /* 背景色を赤色に */
+  color: white; /* テキスト色を白色に */
+  padding: 10px 20px; /* パディング */
+  border: none; /* 枠線なし */
+  cursor: pointer; /* カーソルをポインターに */
+}
+
+.game-result {
+  font-size: 20px;
+  /* 結果表示を大きく */
+  margin-top: 30px;
+  /* 結果表示のマージンを調整 */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 選択されたボタンのスタイル */
+.game-choice.selected {
+  background-color: #bac526;
+  /* 選択されたボタンの色 */
+}
